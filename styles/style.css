@@ -1,0 +1,142 @@
+/* work sans font */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* header styles */
+.header {
+  background-color: rgba(255, 144, 14, 0.1);
+  padding: 50px 100px 20px 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-title {
+  font-weight: 700;
+  font-size: 45px;
+  color: #131313;
+}
+
+.nav-link {
+  display: flex;
+}
+
+.nav-link ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-link ul li {
+  margin-left: 40px;
+}
+
+.nav-link ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: #424242;
+}
+
+.nav-link .humbgr {
+    display: none;
+}
+
+.header-info {
+  text-align: center;
+  margin-top: 100px;
+  padding: 0px 200px;
+}
+
+.head-info-title {
+  font-weight: 700;
+  font-size: 64px;
+  color: #131313;
+}
+
+.head-info-subtitle {
+  margin: 30px 0px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+
+.head-btn {
+    width: 168px;
+    height: 64px;
+    border: none;
+    background-color: #FF900E;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.header-img {
+    width: 100%;
+}
+
+.header-img img {
+    width: 100%;
+}
+
+/* Media Query */
+@media only screen and (max-width: 576px) {
+    .header {
+        padding: 0;
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    .header-info {
+        margin: 0;
+        padding: 0;
+        margin-top: 15px;
+    }
+
+    .head-info-title {
+        font-size: 30px;
+    }
+
+    .head-info-subtitle {
+        padding: 0 5px;
+    }
+    
+    nav {
+        padding: 0 30px;
+    }
+
+    .nav-link li {
+        display: none;
+    }
+
+    .nav-link .humbgr {
+    display: block;
+}
+
+    .brand-title {
+        font-size: 20px;
+    }
+
+    .head-btn {
+        font-size: 16px;
+        width: 140px;
+        height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .header-img {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

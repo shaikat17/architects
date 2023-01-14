@@ -172,6 +172,23 @@ color: #727272;
 }
 
 
+/* Footer Section styles */
+footer {
+  width: 85%;
+  height: 100px;
+  background-color: #FFF4E7;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 100px;
+  margin-bottom: 50px;
+}
+
+footer p {
+  font-weight: 400;
+font-size: 20px;
+color: #424242;
+}
+
 /* Media Query */
 @media only screen and (max-width: 576px) {
     .header {
@@ -228,5 +245,9 @@ color: #727272;
       justify-content: center;
       align-items: center;
       gap: 20px; 
+    }
+
+    footer p {
+      font-size: 10px;
     }
 }

@@ -253,6 +253,7 @@ main {
 .smf-container {
   display: flex;
   justify-content: space-around;
+  gap: 20px;
 }
 
 .smf-box {
@@ -264,6 +265,38 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.smf-box:hover {
+  animation: border-anm 5s linear 1s infinite alternate;
+  transition: all 2s ease-in-out;
+}
+
+@keyframes border-anm {
+    0% {
+      border: none;
+      transform: scale(0.5);
+    }
+
+    8% {
+      transform: scale(1);
+    }
+
+    25% {
+      border-left: 1px solid #ff900e;
+    }
+
+    50% {
+      border-bottom: 1px solid #ff900e;
+    }
+
+    75% {
+      border-right: 1px solid #ff900e;
+    }
+
+    100% {
+      border-top: 1px solid #ff900e;
+    }
 }
 
 .smf-box img {
@@ -281,6 +314,51 @@ main {
 .smf-box p {
   font-weight: 600;
   font-size: 20px;
+  color: #727272;
+}
+
+/* our team */
+.our-team {
+  margin: 50px 0;
+}
+
+.team-container{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team-profile {
+  height: 400px;
+  width: 240px;
+  border: 1px solid #131313;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.team-profile img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px 8px 0 0;
+}
+
+.team-profile-info {
+  margin-top: 15px;
+  padding: 10px;
+
+}
+
+.tp-name {
+  font-weight: 600;
+  color: #131313;
+}
+
+.tp-desc {
+  font-weight: 400;
+  margin-top: 5px;
   color: #727272;
 }
 
@@ -332,7 +410,18 @@ footer p {
     padding: 0;
     margin: 0;
     padding-top: 20px;
+    position: relative;
   }
+
+  /* .humbgr:hover .nav-link {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+    background-color: red;
+    z-index: 99;
+  } */
 
   .header-info {
     margin: 0;
@@ -406,11 +495,11 @@ footer p {
     -moz-transform: translate(0);
     -ms-transform: translate(0);
     -o-transform: translate(0);
-}
+  }
   .smf-container,
   .sponsors-img-container,
   .features,
-  .e-feature {
+  .e-feature, .team-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
